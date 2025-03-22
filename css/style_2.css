@@ -1,0 +1,18 @@
+.offerte-wrapper {
+    display: block;
+}
+
+.offerte-label {
+    margin-bottom: 10px;
+}
+
+.offerte-button-wrapper {
+    display: block;
+}
+
+.offerte-button {
+    display: inline-block;
+    text-decoration: none;
+    border-style: solid;
+    cursor: pointer;
+}

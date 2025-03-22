@@ -1,0 +1,354 @@
+.custom-product-grid {
+    display: grid !important;
+    gap: 20px;
+	grid-template-columns: repeat(3, 1fr) !important;
+
+}
+
+.custom-product-grid .product-card-plugin{
+   padding: 25px 20px 10px 10px;
+}
+
+.product-card-plugin {
+	background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(205, 205, 205, 0.5);
+    transition: box-shadow 0.3s ease !important;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.custom-product-image-widget {
+    width: 175px;
+    height: 175px;
+	object-fit: cover;
+	padding:16px 16px 0 0;
+}
+
+.custom-product-image-link-widget {
+    display: flex;
+    justify-content: right;
+}
+
+.custom-description-list-card{
+	list-style:none;
+	padding: 16px !important;
+	background:#00ab640a;
+	min-height:160px;
+}
+
+.custom-product-title{
+padding-top: 10px;
+
+}
+
+.custom-product-title h3 {
+    font-size: 1.3em !important;
+    text-align: left;
+	padding-left:16px;
+	color:#0058e6;
+	line-height:inherit !important;
+}
+.custom-short-description {
+	padding-left:16px;
+	padding-bottom:10px;
+}
+
+.custom-short-description span{
+
+	color:#000;
+	font-size:0.8em;
+	font-weight:200;
+}
+
+.eael-product-price .price-display-show-custom{
+color:#0058e6 !important;
+}
+
+.custom-description-list-card li{
+margin-bottom:5px !important;
+color:#161616 !important;
+font-size: 0.9em !important;
+}
+
+.check-icon-list span {
+font-size:1em !important;	
+	color:#161616;
+}
+
+.check-icon-list p{
+margin-bottom:5px !important;	
+}
+
+.custom-button-for-card {
+    background-color: #0058e6;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+	font-weight:600;
+}
+
+.custom-button-for-card:hover {
+    background-color: #008f52;
+	color:#fff;
+}
+
+.icon-custom-product {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.price-excl-btw{
+	font-size:0.7em;
+}
+
+/*
+.product-card-widget {
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    text-align: center;
+}
+*/
+.custom-sale-badge {
+    color: #fff;
+    background-color: #ff2a13;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    line-height: 1.2em;
+    top: 30px;
+    left: 0;
+    margin: 0;
+    z-index: 9;
+    border-radius: 0px 10px 10px 0px;
+    padding: 7px 0px 7px 0px;
+    width: 100px;
+}
+
+
+.eael-product-price-and-button-wrapper {
+    display: flex;
+    align-items: center; /* Zorgt ervoor dat de items op dezelfde hoogte staan */
+    justify-content: space-between; /* Verspreid de prijs en knop gelijkmatig */
+    padding: 16px;
+    border-top: 1px solid #e4e4e7;
+}
+
+.eael-product-price {
+    margin-right: 10px; /* Voeg wat ruimte toe tussen de prijs en de knop */
+}
+
+
+
+
+
+/* Styling voor de zoekbalk container */
+.product-search {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styling voor het label */
+.product-search-custom label {
+    font-size: 16px;
+    color: #0058e6;
+    margin-bottom: 5px;
+}
+
+.product-search-custom{
+display:flex;
+justify-content:space-between;
+}
+
+/* Styling voor het zoekveld */
+#product-search-input-container #product-search-input {
+    width: 100%;
+	background:#fff;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #0058e6;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#product-search-input-container{
+max-width:400px;
+	width:100%;
+}
+
+
+/* Focus-effect voor het zoekveld */
+#product-search-input:focus {
+    border-color: #0058e6;
+    box-shadow: 0 0 5px rgba(81, 186, 94, 0.5);
+}
+
+.product-search-custom .product-search-results {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Houdt de inhoud rechts uitgelijnd */
+  gap: 10px;
+}
+/* Standaard styling voor de knoppen */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Zorgt ervoor dat de knoppen naar een nieuwe regel gaan */
+    gap: 10px; /* Ruimte tussen de knoppen */
+    justify-content: center;
+}
+
+/* Styling voor grotere schermen */
+.filter-button {
+    flex: 1 1 auto;
+    padding: 10px 20px;
+	background-color: #0073e6; /* Standaard achtergrondkleur */
+    color: #ffffff; /* Standaard tekstkleur */
+    border: none;
+    border-radius: 5px; /* Standaard border-radius */
+    cursor: pointer;
+    margin: 5px; /* Standaard margin */
+    transition: background-color 0.3s ease, color 0.3s ease;
+	position:relative;
+}
+
+
+
+.filter-button:hover {
+    background-color: #005bb5; /* Hover achtergrondkleur */
+    color: #ffffff; /* Hover tekstkleur */
+}
+
+
+
+.filter-button:last-child {
+    margin-right: 0; /* Verwijder de laatste margin voor de netheid */
+}
+
+.notification-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000; /* pas de kleur aan zoals gewenst */
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+	position: absolute;
+    top: -5px;
+    right: -5px;
+}
+@media (max-width: 1180px) {
+.custom-product-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+
+/* Media query voor schermen kleiner dan 768px */
+@media (max-width: 768px) {
+    .filter-buttons {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .filter-button {
+        flex: 1 1 45%; /* Maakt knoppen 45% breed zodat er 2 in een rij passen */
+        margin-bottom: 10px;
+    }
+.product-search-custom .product-search-results {
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    text-align: left;
+  }
+	.product-search-custom{
+   flex-direction: column;
+		margin-bottom:10px;
+}
+
+.product-search-results{
+	text-align:left;
+	}
+
+
+.custom-product-grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+
+.product-loader-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #51ba5e;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+button.sale-button {
+    position: relative;
+}
+
+.filter-button .sale-button .notification-circle {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+.custom-short-description {
+	padding-left:16px;
+	padding-bottom:10px;
+	padding-right:16px;
+}
+	}
+/* Media query voor schermen tot 374px */
+@media (max-width: 374px) {
+    .custom-button-for-card {
+        font-size: 0.8em;
+    }
+
+.product-search-custom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
