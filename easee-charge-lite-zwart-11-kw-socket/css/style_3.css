@@ -1,0 +1,59 @@
+/*
+Theme Name: Qiolo Child
+Theme URI: http://qiolo.webgeniuslab.net/
+Template: qiolo
+Author: WebGeniusLab
+Author URI: http://webgeniuslab.net/
+Description: WebGeniusLab team presents absolutely fresh and powerful WordPress theme. It combines new technologies and functional design that helps to showcase your content in better way. This WordPress theme is developed with attention to details, so you can create effective presentation of a website easily. Enjoy building web pages with our product!
+Version: 1.0.5.1706873049
+Updated: 2024-02-02 11:24:09
+
+*/
+
+
+.special-offer{
+   background-color: #51ba5e;
+   text-align: center;
+   padding: 10px;
+   display:flex;
+   color:#fff;
+} 
+
+
+
+.special-offer-mobile{
+  display:none;
+  font-size:1em;
+}
+
+
+.special-offer-mobile-title{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#DEFE47;
+  font-weight:600;
+  text-align:center;
+}
+
+.special-offer-mobile .description{
+	margin-top: -10px;
+}
+	
+.special-offer a {
+	color: inherit; 
+	text-decoration: underline;
+	margin-left:3px;
+}
+
+
+
+
+
+@media (max-width: 622px) {
+  .special-offer-mobile{
+      display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+	}}

@@ -1,0 +1,206 @@
+.custom-product-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Hoofdafbeelding styling */
+.custom-product-gallery .main-image {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+    cursor: zoom-in;
+	border: 1px solid #e5e5e5;
+    border-radius: 20px;
+	background:#fff;
+}
+
+.custom-product-gallery .main-image::before {
+    content: '';
+    display: block;
+    padding-top: 75%; /* Verhouding 4:3 */
+}
+
+.custom-product-gallery .main-image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s;
+    object-fit: contain;
+    padding: 7%;
+}
+
+/* Thumbnails-container styling */
+.custom-product-gallery .thumbnails-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative; /* Nodig voor de positionering van de pijlen */
+}
+
+
+
+
+/* Thumbnails styling voor carousel-layout */
+.custom-product-gallery .thumbnails {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease-in-out;
+	overflow-x: scroll;
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.custom-product-gallery .thumbnails::-webkit-scrollbar{
+   display: none;  /* Safari and Chrome */
+}
+
+
+
+/* Thumbnail items */
+.custom-product-gallery .thumbnail {
+    flex-shrink: 0;
+    width: 75px; /* Pas aan indien nodig */
+    height: 75px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c9bfbf;
+}
+
+.custom-product-gallery .thumbnails .thumbnail:last-child {
+    margin-right: 3px;
+}
+
+/* Afbeelding binnen de thumbnail */
+.custom-product-gallery .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.custom-product-gallery .thumbnail img:hover {
+    transform: scale(1.1);
+}
+
+/* Geselecteerde thumbnail */
+.custom-product-gallery .thumbnail.selected {
+    border: 2px solid #00ab64;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.custom-product-gallery .thumbnails > .thumbnail:first-child {
+    margin-left: 0; /* Geen margin aan de linkerkant voor de eerste thumbnail */
+}
+
+.custom-product-gallery .thumbnails > .thumbnail:last-child {
+    margin-right: 0; /* Geen margin aan de rechterkant voor de laatste thumbnail */
+}
+
+.custom-product-gallery .thumbnails > .thumbnail:not(:first-child) {
+    margin-left: var(--thumbnails-gap, 10px); /* Gap aan de linkerkant voor alle andere thumbnails */
+}
+
+.custom-product-gallery .thumbnails > .thumbnail:not(:last-child) {
+    margin-right: var(--thumbnails-gap, 10px); /* Gap aan de rechterkant voor alle andere thumbnails */
+}
+
+
+/* Carousel pijlen */
+.custom-product-gallery .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+}
+
+.custom-product-gallery .carousel-arrow.left {
+    left: 0px;
+}
+
+.custom-product-gallery .carousel-arrow.right {
+    right: 0px;
+}
+
+.custom-product-gallery .carousel-arrow svg {
+    stroke: white;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.custom-product-gallery .carousel-arrow:hover svg {
+    transform: scale(1.2);
+}
+
+/* Responsieve aanpassingen voor de carousel */
+@media (max-width: 1080px) {
+    .custom-product-gallery .main-image {
+     max-width:500px;
+    }
+
+	.custom-product-gallery .thumbnails-container {
+	max-width:500px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative;
+}
+
+	.custom-product-gallery .carousel-arrow {
+	display:none;
+	}
+
+
+    .custom-product-gallery .main-image::before {
+        padding-top: 100%; /* Vierkante verhouding op kleinere schermen */
+    }
+
+    .custom-product-gallery .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .custom-product-gallery .carousel-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .custom-product-gallery .carousel-arrow svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .custom-product-gallery .thumbnail {
+        width: 50px;
+        height: 50px;
+    }
+
+	.custom-product-gallery .main-image{
+		max-width:360px;
+	}
+	.custom-product-gallery .main-image img{
+		padding:0;
+	}
+
+}
+

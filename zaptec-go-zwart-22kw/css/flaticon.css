@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon.eot");
+    src: url("../fonts/flaticon.ttf") format("truetype"),
+        url("../fonts/flaticon.woff2") format("woff2"),
+        url("../fonts/flaticon.woff") format("woff"),
+        url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+        url("../images/flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("../images/flaticon.svg#Flaticon") format("svg");
+    }
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: inherit;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-001-magnifying-glass:before {
+    content: "\f101";
+}
+.flaticon-002-shopping-bag:before {
+    content: "\f102";
+}
+.flaticon-003-distance:before {
+    content: "\f103";
+}
+.flaticon-004-stopwatch:before {
+    content: "\f104";
+}
+.flaticon-006-right:before {
+    content: "\f105";
+}
+.flaticon-007-menu-bar:before {
+    content: "\f106";
+}
+.flaticon-008-shopping-bag-1:before {
+    content: "\f107";
+}
+.flaticon-009-search:before {
+    content: "\f108";
+}
+.flaticon-010-arrow-down-sign-to-navigate:before {
+    content: "\f109";
+}
+.flaticon-011-call:before {
+    content: "\f10a";
+}
+.flaticon-012-leave:before {
+    content: "\f10b";
+}
+.flaticon-013-management:before {
+    content: "\f10c";
+}
+.flaticon-014-flash:before {
+    content: "\f10d";
+}
+.flaticon-015-road:before {
+    content: "\f10e";
+}
+.flaticon-016-team:before {
+    content: "\f10f";
+}
+.flaticon-017-electric-charge:before {
+    content: "\f110";
+}
+.flaticon-018-quote:before {
+    content: "\f111";
+}
+.flaticon-019-quote-1:before {
+    content: "\f112";
+}
+.flaticon-020-steering-wheel:before {
+    content: "\f113";
+}
+.flaticon-021-accumulator:before {
+    content: "\f114";
+}
+.flaticon-022-speedometer:before {
+    content: "\f115";
+}
+.flaticon-023-link:before {
+    content: "\f116";
+}
+.flaticon-024-next:before {
+    content: "\f117";
+}
+.flaticon-025-chat:before {
+    content: "\f118";
+}
+.flaticon-026-heart:before {
+    content: "\f119";
+}
+.flaticon-027-share:before {
+    content: "\f11a";
+}
+.flaticon-028-check:before {
+    content: "\f11b";
+}
+.flaticon-029-remove:before {
+    content: "\f11c";
+}
+.flaticon-030-info:before {
+    content: "\f11d";
+}
+.flaticon-031-warning:before {
+    content: "\f11e";
+}
+.flaticon-032-close-button:before {
+    content: "\f11f";
+}
+.flaticon-033-black-placeholder-variant:before {
+    content: "\f120";
+}
+.flaticon-034-email:before {
+    content: "\f121";
+}
+.flaticon-035-car-key:before {
+    content: "\f122";
+}
+.flaticon-036-plug:before {
+    content: "\f123";
+}
+.flaticon-037-battery:before {
+    content: "\f124";
+}
+.flaticon-038-electric-charge-1:before {
+    content: "\f125";
+}
+.flaticon-039-nut:before {
+    content: "\f126";
+}
+.flaticon-040-electric-car:before {
+    content: "\f127";
+}
+.flaticon-041-power-bank:before {
+    content: "\f128";
+}
+.flaticon-042-battery-status:before {
+    content: "\f129";
+}
+.flaticon-043-power-bank-1:before {
+    content: "\f12a";
+}
+.flaticon-044-co2:before {
+    content: "\f12b";
+}
+.flaticon-045-wheel:before {
+    content: "\f12c";
+}
+.flaticon-046-close:before {
+    content: "\f12d";
+}
+.flaticon-047-right-arrow:before {
+    content: "\f12e";
+}
+.flaticon-048-check-1:before {
+    content: "\f12f";
+}
+.flaticon-049-tick:before {
+    content: "\f130";
+}
+.flaticon-050-checked:before {
+    content: "\f131";
+}
+.flaticon-051-check-2:before {
+    content: "\f132";
+}
+.flaticon-052-check-3:before {
+    content: "\f133";
+}
+.flaticon-054-plus:before {
+    content: "\f134";
+}
+.flaticon-055-plus-1:before {
+    content: "\f135";
+}
+.flaticon-056-plus-2:before {
+    content: "\f136";
+}
+.flaticon-057-plus-positive-add-mathematical-symbol:before {
+    content: "\f137";
+}
